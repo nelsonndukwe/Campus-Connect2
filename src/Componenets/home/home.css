@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;594&family=Montserrat&family=Poppins:ital,wght@0,400;0,500;0,600;1,300&family=Raleway:ital,wght@0,900;1,900&family=Sacramento&family=Ubuntu&display=swap');
+
+.home {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    margin-top: 8rem;
+}
+
+.main_home-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr min-content;
+    align-items: center;
+
+}
+
+
+
+.home_h4 {
+    font-size: 3rem;
+    font-weight: 400;
+    font-family: 'Raleway';
+    
+
+}
+
+
+.main_header-image {
+    display: flex;
+    border-radius: 50%;
+
+}
+
+
+.main_header-image:hover {
+    background: transparent;
+    color: var(--color-gray-600);
+    ;
+    transition: var(--transition);
+}
+
+
+.home_btn {
+    width: max-content;
+    display: inline-block;
+    color: var(--color-primary);
+    padding: 0.75rem 1.2rem;
+    border-radius: 30rem;
+    cursor: pointer;
+    border: 1px solid;
+    transition: var(--transition);
+    background: orange;
+    margin-top: 2rem;
+}
+
+.home_btn:hover {
+    background: var(--color-gray-600);
+    transition: var(--transition);
+    transform: scale(1.3);
+
+
+
+}
+
+.text_btn {
+    font-size: 1.2rem;
+    color: white;
+
+}
+
+
+
+/* MEDIA QUERIS FOR MEDIUM AND SMALL SCREENS
+
+
+
+
+
+Media Qurrey > Medium Devices */
+
+
+@media screen and (max-width:1024px) {
+
+    .main_home-container {
+        display: grid;
+        width: var(--container-width-lg);
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+
+    .home_btn {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .main_home-right{
+        margin-top: 10rem;
+    }
+
+
+    .home_h1{
+        text-align: center;
+    }
+
+
+    .home_h4{ 
+        text-align: center;
+    }
+    
+    
+
+    
+}

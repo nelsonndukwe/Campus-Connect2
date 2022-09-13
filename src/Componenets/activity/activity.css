@@ -1,0 +1,56 @@
+
+   .testimonail_conatiner{
+    border: 10px solid var(blue);
+    height: 30rem;
+    background: var( --color-gray-600);
+    border-radius: 5rem;
+    margin: 5rem 0;
+
+    
+   }
+
+.testimonail{
+    
+    background: var(--color-bg-varient);
+    text-align: center;
+    padding: 2rem;
+    border-radius: 2rem;
+    user-select: none;
+}
+
+.client_avater{
+    width: 10rem;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    border: 0.4rem solid var(--color-primary-varient);
+}
+
+.client_review{
+    color:white;
+    font-weight: 300;
+    display: block;
+    width: 80%;
+    margin: 0.8rem auto 0;
+
+
+}
+
+
+.client_name{
+    color: white;
+    font-weight: 600;
+    display: block;
+    
+}
+
+/* 
+@keyframes .client_avater {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  } */

@@ -1,0 +1,144 @@
+.contact_container {
+    margin-top: 10rem;
+    width: 58%;
+    display: grid;
+    grid-template-columns: 30% 58%;
+    gap: 12%;
+    margin-left: 20%;
+}
+
+.contact_options {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+
+.contact_option {
+    background: var(--color-gray-600);
+    padding: 1.2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    border-radius: 1.2rem;
+    text-align: center;
+    transition: var(--transition);
+
+}
+
+.contact_option:hover {
+    
+    transform: scale(1.2);
+    transition: 2s;
+
+
+}
+
+.contact_option-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: white;
+
+}
+
+.contact_option a {
+    margin-top: 0.7rem;
+    display: inline-block;
+    font-size: 0.8rem;
+
+}
+
+.contact_option-name {
+    font-size: 0.85rem;
+}
+
+
+.contact_option-icon h4,
+h5 {
+    color: white;
+}
+
+
+
+
+
+/* Form */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 1px solid var(--color-gray-600);
+    resize: none;
+    color: --color-gray-600;
+    color: var();
+}
+
+
+
+.contact_btn {
+    width: max-content;
+    display: inline-block;
+    color: white;
+    padding: 0.75rem 1.2rem;
+    border-radius: 30rem;
+    cursor: pointer;
+    border: 1px solid;
+    transition: var(--transition);
+    background: var(--color-gray-600);
+    margin-top: 2rem;
+}
+
+.contact_btn:hover{
+    background: transparent;
+    border: 1px solid var(--color-gray-600);
+    transition: var(--transition);
+    color: var(--color-gray-600);
+}
+
+
+/* Media Qurrey > Medium Devices*/
+
+
+@media screen and (max-width:1024px) {
+
+    .contact_container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+
+
+    .contact_options {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        align-items: center;
+    }
+
+
+
+
+}
+
+
+/* Media Qurrey > Small Devices*/
+
+
+@media screen and (max-width:600px) {
+    .conatiner.contact_container {
+        grid-template-columns: 1fr;
+        width: var(--container-width-sm);
+        margin: 0 auto;
+    }
+
+}
